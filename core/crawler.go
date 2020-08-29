@@ -183,7 +183,7 @@ func NewCrawler(site *url.URL, cmd *cobra.Command) *Crawler {
 	var output *Output
 	outputFolder, _ := cmd.Flags().GetString("output")
 	if outputFolder != "" {
-		filename := strings.ReplaceAll(site.Hostname(), ".", "_")
+		filename := strings.ReplaceAll(site.Hostname(), ".", ".")
 		output = NewOutput(outputFolder, filename)
 	}
 	// Set url whitelist regex
