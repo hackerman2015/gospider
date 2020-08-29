@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/jaeles-project/gospider/core"
+	"github.com/hackerman2015/gospider/core"
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
